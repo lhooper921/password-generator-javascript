@@ -49,13 +49,14 @@ THEN the password is either displayed in an alert or written to the page
 
 ![Password Length Prompt](https://github.com/lhooper921/password-generator-javascript/blob/master/Assets/Screenshots/Screenshots/screenshot6.PNG)
 
-### Portfolio Page max width 640px
+### Length Confirmation Alert
 
 ![Length Alert](https://github.com/lhooper921/password-generator-javascript/blob/master/Assets/Screenshots/Screenshots/screenshot7.PNG)
 
 ### Incorrect Length Alert
 
-![Screenshot Portfolio 768](https://github.com/lhooper921/password-generator-javascript/blob/master/Assets/Screenshots/Screenshots/screenshot8.PNG)
+![Incorrect Length Alert
+](https://github.com/lhooper921/password-generator-javascript/blob/master/Assets/Screenshots/Screenshots/screenshot8.PNG)
 
 
 
