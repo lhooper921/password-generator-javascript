@@ -24,7 +24,6 @@ function needParameter() {
 }
 
 // Require user to select length between 8-128
-
 function lengthConfirm() {
     var passwordLength = prompt('How long would you like your password to be? Must be between 8-128 characters');
     if (passwordLength >= 8  && passwordLength <= 128) {
@@ -40,6 +39,7 @@ function lengthConfirm() {
 //   Password Length
 let setPasswordLength= lengthConfirm();
 
+// Create the password array
 let password = [];
 
 if (useLowerCase) {
@@ -60,6 +60,7 @@ if (useSymbols) {
 
 password.length= setPasswordLength;
 
+// Define shuffle function
 
 function shuffle(Array) {
     var currentIndex = Array.length, temporaryValue, randomIndex;
