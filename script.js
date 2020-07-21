@@ -58,7 +58,7 @@ if (useSymbols) {
     password = password.concat(symbols[Math.floor(Math.random() * symbols.length)]);
 }}}
 
-password.length= setPasswordLength;
+
 
 // Define shuffle function
 
