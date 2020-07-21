@@ -39,15 +39,11 @@ function lengthConfirm() {
 //   Password Length
 let setPasswordLength= lengthConfirm();
 
-// Create the password array
+// Force password to use at least one of each selected parameter
 let password = [];
 
 if (useLowerCase) {
-    for (let i = 0; i < 2; i++) {
         password.push(lowerCase[Math.floor(Math.random() * lowerCase.length)]);
-    
-
-
 if (useUpperCase) {
     password = password.concat(upperCase[Math.floor(Math.random() * upperCase.length)]);
 }
@@ -56,7 +52,7 @@ if (useNumbers) {
 }
 if (useSymbols) {
     password = password.concat(symbols[Math.floor(Math.random() * symbols.length)]);
-}}}
+}}
 
 
 
@@ -80,9 +76,32 @@ function shuffle(Array) {
 
     return password;
 }
+// Define password array within selected length
+function addCharacter(Array){
+   let i= Math.floor(Math.random() * 3);
+   if (i=0) {
+    if (useLowerCase) {
+        array = array.concat(lowerCase[Math.floor(Math.random() * lowerCase.length)]);
+    }}
+    if (i=1){
+    if (useUpperCase) {
+        password = password.concat(upperCase[Math.floor(Math.random() * upperCase.length)]);
+    }}
+    if(i=2){
+    if (useNumbers) {
+        password = password.concat(numbers[Math.floor(Math.random() * numbers.length)]);
+    }}
+    if (i=3){
+    if (useSymbols) {
+        password = password.concat(symbols[Math.floor(Math.random() * symbols.length)]);
+    }}
+    
 
-
+}
 function generatePassword(){
+    while(password.length<setPasswordLength){
+        addCharacter(password)
+    }
     shuffle (password);
     return password.join('');
 }
