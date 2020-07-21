@@ -22,7 +22,7 @@ function needParameter() {
     alert('Parameters have been set!');
 }
 }
-
+needParameter();
 // Require user to select length between 8-128
 function lengthConfirm() {
     var passwordLength = prompt('How long would you like your password to be? Must be between 8-128 characters');
